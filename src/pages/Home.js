@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
       <div className="app">
-        <h1>Movie Land</h1>
+        <h1>Movies</h1>
         <div className="search">
           <input
             placeholder="Search for movies"
@@ -45,7 +45,7 @@ const Home = () => {
         {movies?.length > 0 ? (
           <div className="container">
             {movies.map((movie) => (
-              <MovieCard movie={movie} />
+              <MovieCard movie={movie} size={50}  />
             ))}
           </div>
         ) : (
